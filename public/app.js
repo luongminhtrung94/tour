@@ -13,11 +13,6 @@ const phoneCodeSelect = document.getElementById('phoneCode');
 const phoneInput = document.getElementById('phone');
 const messageInput = document.getElementById('message');
 
-// Error Message Elements
-const nameError = document.getElementById('name-error');
-const emailError = document.getElementById('email-error');
-const phoneError = document.getElementById('phone-error');
-
 // Only initialize form validation if form elements exist
 const formElementsExist = contactForm && nameInput && emailInput && phoneInput;
 
@@ -58,145 +53,81 @@ function validatePhone(phone) {
     return '';
 }
 
-// Real-time Validation (only if form elements exist)
+// Form Submission (only if form elements exist)
 if (formElementsExist) {
-    nameInput.addEventListener('blur', () => {
-        const error = validateName(nameInput.value);
-        nameError.textContent = error;
-        if (error) {
-            nameInput.classList.add('error');
-        } else {
-            nameInput.classList.remove('error');
-        }
-    });
-
-    emailInput.addEventListener('blur', () => {
-        const error = validateEmail(emailInput.value);
-        emailError.textContent = error;
-        if (error) {
-            emailInput.classList.add('error');
-        } else {
-            emailInput.classList.remove('error');
-        }
-    });
-
-    phoneInput.addEventListener('blur', () => {
-        const error = validatePhone(phoneInput.value);
-        phoneError.textContent = error;
-        if (error) {
-            phoneInput.classList.add('error');
-        } else {
-            phoneInput.classList.remove('error');
-        }
-    });
-
-    // Clear error on input
-    nameInput.addEventListener('input', () => {
-        if (nameInput.classList.contains('error')) {
-            nameError.textContent = '';
-            nameInput.classList.remove('error');
-        }
-    });
-
-    emailInput.addEventListener('input', () => {
-        if (emailInput.classList.contains('error')) {
-            emailError.textContent = '';
-            emailInput.classList.remove('error');
-        }
-    });
-
-    phoneInput.addEventListener('input', () => {
-        if (phoneInput.classList.contains('error')) {
-            phoneError.textContent = '';
-            phoneInput.classList.remove('error');
-        }
-    });
-
-    // Form Submission
     contactForm.addEventListener('submit', async (e) => {
-    e.preventDefault();
+        e.preventDefault();
 
-    // Clear previous messages
-    formMessage.textContent = '';
-    formMessage.className = 'form-message';
+        // Clear previous messages
+        formMessage.textContent = '';
+        formMessage.className = 'form-message';
 
-    // Validate all fields
-    const nameErr = validateName(nameInput.value);
-    const emailErr = validateEmail(emailInput.value);
-    const phoneErr = validatePhone(phoneInput.value);
+        // Validate all fields and collect errors
+        const errors = [];
+        const nameErr = validateName(nameInput.value);
+        const emailErr = validateEmail(emailInput.value);
+        const phoneErr = validatePhone(phoneInput.value);
 
-    nameError.textContent = nameErr;
-    emailError.textContent = emailErr;
-    phoneError.textContent = phoneErr;
+        if (nameErr) errors.push(nameErr);
+        if (emailErr) errors.push(emailErr);
+        if (phoneErr) errors.push(phoneErr);
 
-    if (nameErr) nameInput.classList.add('error');
-    if (emailErr) emailInput.classList.add('error');
-    if (phoneErr) phoneInput.classList.add('error');
-
-    // Stop if there are validation errors
-    if (nameErr || emailErr || phoneErr) {
-        formMessage.textContent = 'Please fix the errors above';
-        formMessage.className = 'form-message error';
-        return;
-    }
-
-    // Prepare form data with phone code
-    const fullPhone = `${phoneCodeSelect.value} ${phoneInput.value.trim()}`;
-    const formData = {
-        name: nameInput.value.trim(),
-        email: emailInput.value.trim(),
-        phone: fullPhone,
-        message: messageInput.value.trim()
-    };
-
-    // Disable submit button
-    submitBtn.disabled = true;
-    submitBtn.textContent = 'Sending...';
-
-    try {
-        const response = await fetch(`${API_URL}/api/contact`, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(formData)
-        });
-
-        const data = await response.json();
-
-        if (response.ok && data.ok) {
-            // Success
-            formMessage.textContent = 'Thank you! Your message has been sent successfully. We will contact you soon.';
-            formMessage.className = 'form-message success';
-            
-            // Reset form
-            contactForm.reset();
-            
-            // Clear any error states
-            nameInput.classList.remove('error');
-            emailInput.classList.remove('error');
-            phoneInput.classList.remove('error');
-            nameError.textContent = '';
-            emailError.textContent = '';
-            phoneError.textContent = '';
-
-            // Scroll to message
-            formMessage.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-        } else {
-            // Error from server
-            formMessage.textContent = data.error || 'Failed to send message. Please try again.';
+        // Stop if there are validation errors
+        if (errors.length > 0) {
+            formMessage.textContent = errors.join('. ');
             formMessage.className = 'form-message error';
+            return;
         }
-    } catch (error) {
-        // Network or other error
-        console.error('Form submission error:', error);
-        formMessage.textContent = 'Network error. Please check your connection and try again.';
-        formMessage.className = 'form-message error';
-    } finally {
-        // Re-enable submit button
-        submitBtn.disabled = false;
-        submitBtn.textContent = 'Send Message';
-    }
+
+        // Prepare form data with phone code
+        const fullPhone = `${phoneCodeSelect.value} ${phoneInput.value.trim()}`;
+        const formData = {
+            name: nameInput.value.trim(),
+            email: emailInput.value.trim(),
+            phone: fullPhone,
+            message: messageInput.value.trim()
+        };
+
+        // Disable submit button
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Sending...';
+
+        try {
+            const response = await fetch(`${API_URL}/api/contact`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            });
+
+            const data = await response.json();
+
+            if (response.ok && data.ok) {
+                // Success
+                formMessage.textContent = 'Thank you! Your message has been sent successfully. We will contact you soon.';
+                formMessage.className = 'form-message success';
+                
+                // Reset form
+                contactForm.reset();
+
+                // Scroll to message
+                formMessage.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            } else {
+                // Error from server
+                formMessage.textContent = data.error || 'Failed to send message. Please try again.';
+                formMessage.className = 'form-message error';
+            }
+        } catch (error) {
+            // Network or other error
+            console.error('Form submission error:', error);
+            formMessage.textContent = 'Network error. Please check your connection and try again.';
+            formMessage.className = 'form-message error';
+        } finally {
+            // Re-enable submit button
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'Send Message';
+        }
     });
 }
 
