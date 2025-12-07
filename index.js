@@ -1,4 +1,19 @@
+const express = require('express');
+const cors = require('cors');
+const path = require('path');
 const nodemailer = require('nodemailer');
+require('dotenv').config();
+
+const app = express();
+const PORT = process.env.PORT || 3000;
+
+// Middleware
+app.use(cors());
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
+// Serve static frontend files
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Input sanitization helper
 function sanitizeInput(str) {
@@ -132,23 +147,8 @@ Submitted at: ${new Date().toLocaleString()}
     return { success: true, messageId: info.messageId };
 }
 
-// Vercel Serverless Function Handler
-module.exports = async (req, res) => {
-    // Set CORS headers
-    res.setHeader('Access-Control-Allow-Origin', '*');
-    res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
-    res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
-
-    // Handle preflight request
-    if (req.method === 'OPTIONS') {
-        return res.status(200).end();
-    }
-
-    // Only allow POST
-    if (req.method !== 'POST') {
-        return res.status(405).json({ ok: false, error: 'Method not allowed' });
-    }
-
+// Contact form handler
+async function handleContact(req, res) {
     try {
         const { name, email, phone, message } = req.body;
 
@@ -197,5 +197,32 @@ module.exports = async (req, res) => {
             error: 'Failed to send message. Please try again later.' 
         });
     }
-};
+}
 
+// API Routes
+app.post('/api/contact', handleContact);
+
+// Health check endpoint
+app.get('/healthz', (req, res) => {
+    res.status(200).json({ status: 'ok', timestamp: new Date().toISOString() });
+});
+
+// Catch-all route - serve index.html for any unmatched routes
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
+
+// Start server only when running locally (not on Vercel)
+if (process.env.NODE_ENV !== 'production' || !process.env.VERCEL) {
+    app.listen(PORT, () => {
+        console.log('='.repeat(50));
+        console.log('TOPTHAI TRAVEL COMPANY - Server Started');
+        console.log('='.repeat(50));
+        console.log(`Server running on http://localhost:${PORT}`);
+        console.log(`Environment: ${process.env.NODE_ENV || 'development'}`);
+        console.log('='.repeat(50));
+    });
+}
+
+// Export for Vercel
+module.exports = app;

@@ -59,9 +59,6 @@ SMTP_PORT=587
 SMTP_USER=your-email@gmail.com
 SMTP_PASS=your-app-password
 
-# Email Addresses
-FROM_EMAIL=your-email@gmail.com
-TO_EMAIL=topthaiasia@gmail.com
 ```
 
 ### 3. Start the application
@@ -183,7 +180,6 @@ topthai-travel-website/
 | `SMTP_USER` | Yes | - | SMTP username/email |
 | `SMTP_PASS` | Yes | - | SMTP password |
 | `FROM_EMAIL` | No | `SMTP_USER` | Email sender address |
-| `TO_EMAIL` | No | `topthaiasia@gmail.com` | Email recipient address |
 
 ## 🔒 Security Features
 
