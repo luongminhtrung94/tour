@@ -1,0 +1,555 @@
+{
+  "thailand": [
+    {
+      "id": "4-day-thailand-explorer",
+      "image": "/assets/images/thailand-banner.jpg",
+      "title": "4-Day Thailand Explorer",
+      "daysRange": "4 Days",
+      "tags": ["Bangkok", "Temples", "Culture"],
+      "description": "Experience the best of Bangkok with visits to the Grand Palace, floating markets, traditional Thai massage, and a scenic Chao Phraya River cruise.",
+      "location": "Bangkok, Thailand",
+      "duration": "4 Days / 3 Nights",
+      "featured": false,
+      "overview": "Embark on an unforgettable 4-day journey through Bangkok, Thailand's vibrant capital city. This carefully crafted tour takes you through ancient temples, bustling markets, and serene waterways. Experience the perfect blend of Thai culture, history, and modern city life. From the magnificent Grand Palace to the authentic floating markets, every moment is designed to immerse you in the rich tapestry of Thai traditions.",
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Bangkok Arrival",
+          "activities": [
+            "Airport pickup and welcome by our English-speaking guide",
+            "Transfer to hotel and check-in",
+            "Free time to rest and freshen up",
+            "Evening welcome dinner at a traditional Thai restaurant",
+            "Optional: Night market exploration"
+          ]
+        },
+        {
+          "day": 2,
+          "title": "Grand Palace & Temple Tour",
+          "activities": [
+            "Breakfast at hotel",
+            "Visit the magnificent Grand Palace complex",
+            "Explore Wat Phra Kaew (Temple of the Emerald Buddha)",
+            "Lunch at a local restaurant",
+            "Visit Wat Pho (Temple of the Reclining Buddha)",
+            "Traditional Thai massage experience",
+            "Return to hotel"
+          ]
+        },
+        {
+          "day": 3,
+          "title": "Floating Market & River Cruise",
+          "activities": [
+            "Early morning departure to Damnoen Saduak Floating Market",
+            "Boat ride through the colorful floating market",
+            "Shopping for local handicrafts and souvenirs",
+            "Lunch at riverside restaurant",
+            "Afternoon Chao Phraya River cruise",
+            "Visit Wat Arun (Temple of Dawn)",
+            "Evening free for shopping at MBK or Siam Paragon"
+          ]
+        },
+        {
+          "day": 4,
+          "title": "Departure",
+          "activities": [
+            "Breakfast at hotel",
+            "Free time for last-minute shopping",
+            "Hotel check-out",
+            "Transfer to Suvarnabhumi International Airport",
+            "Departure with wonderful memories"
+          ]
+        }
+      ],
+      "cost": {
+        "includes": [
+          "3 nights accommodation in 4-star hotel",
+          "Daily breakfast at hotel",
+          "All airport transfers",
+          "Air-conditioned transportation throughout",
+          "English-speaking tour guide",
+          "All entrance fees as per itinerary",
+          "Floating market boat ride",
+          "Chao Phraya River cruise",
+          "Traditional Thai massage (1 hour)",
+          "Welcome dinner"
+        ],
+        "excludes": [
+          "International airfare",
+          "Travel insurance",
+          "Personal expenses and tips",
+          "Meals not mentioned in itinerary",
+          "Optional activities",
+          "Visa fees (if applicable)",
+          "Alcoholic beverages",
+          "Laundry services"
+        ]
+      },
+      "faqIds": ["best-time-bangkok", "temple-dress-code", "family-friendly", "currency-thailand", "visa-thailand"]
+    },
+    {
+      "id": "5-day-thailand-paradise",
+      "image": "/assets/images/banner.jpg",
+      "title": "5-Day Thailand Paradise",
+      "daysRange": "5 Days",
+      "tags": ["Bangkok", "Pattaya", "Beach"],
+      "description": "Discover Bangkok city highlights, explore Ayutthaya Historical Park, enjoy Pattaya beaches, visit Coral Island, and experience the famous Alcazar Cabaret Show.",
+      "location": "Bangkok & Pattaya, Thailand",
+      "duration": "5 Days / 4 Nights",
+      "featured": true,
+      "overview": "Experience the ultimate Thai adventure with our 5-Day Thailand Paradise tour. This comprehensive package combines the cultural richness of Bangkok with the beach paradise of Pattaya. Explore ancient temples, witness stunning historical sites at Ayutthaya, relax on pristine beaches, and enjoy world-class entertainment. This tour offers the perfect balance of culture, history, adventure, and relaxation.",
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Bangkok Arrival & City Tour",
+          "activities": [
+            "Warm welcome at Suvarnabhumi Airport",
+            "Transfer to hotel and check-in",
+            "Afternoon Bangkok city orientation tour",
+            "Visit Wat Traimit (Golden Buddha Temple)",
+            "Explore Chinatown and Yaowarat Road",
+            "Welcome dinner with traditional Thai performance"
+          ]
+        },
+        {
+          "day": 2,
+          "title": "Ayutthaya Historical Park",
+          "activities": [
+            "Breakfast at hotel",
+            "Full-day excursion to Ayutthaya (UNESCO World Heritage Site)",
+            "Visit Wat Mahathat (famous Buddha head in tree roots)",
+            "Explore Wat Phra Si Sanphet",
+            "Lunch at local restaurant",
+            "Visit Ayutthaya Historical Study Center",
+            "Return to Bangkok",
+            "Evening free for shopping"
+          ]
+        },
+        {
+          "day": 3,
+          "title": "Bangkok to Pattaya",
+          "activities": [
+            "Breakfast and hotel check-out",
+            "Transfer to Pattaya (approximately 2 hours)",
+            "Visit Nong Nooch Tropical Garden",
+            "Enjoy cultural show and elephant performance",
+            "Lunch at the garden",
+            "Hotel check-in in Pattaya",
+            "Evening: Famous Alcazar Cabaret Show"
+          ]
+        },
+        {
+          "day": 4,
+          "title": "Coral Island Adventure",
+          "activities": [
+            "Breakfast at hotel",
+            "Speedboat transfer to Coral Island (Koh Larn)",
+            "Beach activities: swimming, snorkeling, banana boat",
+            "Seafood lunch on the island",
+            "Free time to relax on the beach",
+            "Return to Pattaya",
+            "Evening free to explore Walking Street"
+          ]
+        },
+        {
+          "day": 5,
+          "title": "Departure",
+          "activities": [
+            "Breakfast at hotel",
+            "Free time for shopping at Pattaya Floating Market",
+            "Hotel check-out",
+            "Transfer to Suvarnabhumi Airport",
+            "Departure with wonderful memories"
+          ]
+        }
+      ],
+      "cost": {
+        "includes": [
+          "4 nights accommodation (2 nights Bangkok, 2 nights Pattaya)",
+          "Daily breakfast at hotels",
+          "All airport and inter-city transfers",
+          "Air-conditioned transportation",
+          "English-speaking tour guide throughout",
+          "All entrance fees as per itinerary",
+          "Speedboat to Coral Island",
+          "Snorkeling equipment",
+          "Alcazar Cabaret Show tickets",
+          "Welcome dinner with show",
+          "Lunches as mentioned in itinerary"
+        ],
+        "excludes": [
+          "International airfare",
+          "Travel insurance",
+          "Personal expenses and tips",
+          "Meals not mentioned",
+          "Water sports activities (optional)",
+          "Visa fees (if applicable)",
+          "Alcoholic beverages",
+          "Personal shopping"
+        ]
+      },
+      "faqIds": ["bangkok-pattaya-distance", "coral-island-activities", "alcazar-show", "packing-thailand", "customization"]
+    }
+  ],
+  "vietnam": [
+    {
+      "id": "hanoi-heritage-tour",
+      "image": "/assets/images/vietnam-banner.jpg",
+      "title": "Hanoi Heritage Tour",
+      "daysRange": "4 Days",
+      "tags": ["Hanoi", "Halong Bay", "Heritage"],
+      "description": "Explore Hanoi Old Quarter, cruise through stunning Halong Bay, enjoy traditional Water Puppet Show, and visit the historic Temple of Literature.",
+      "location": "Hanoi & Halong Bay, Vietnam",
+      "duration": "4 Days / 3 Nights",
+      "featured": false,
+      "overview": "Discover the timeless charm of Northern Vietnam with our 4-Day Hanoi Heritage Tour. Journey through Hanoi's atmospheric Old Quarter, where ancient traditions meet vibrant street life. Experience the breathtaking beauty of Halong Bay, a UNESCO World Heritage Site with its thousands of limestone karsts rising from emerald waters. This tour perfectly captures the essence of Vietnamese culture, history, and natural beauty.",
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Hanoi Arrival",
+          "activities": [
+            "Airport pickup at Noi Bai International Airport",
+            "Transfer to hotel in Hanoi Old Quarter",
+            "Check-in and rest",
+            "Afternoon walking tour of Hanoi Old Quarter",
+            "Visit Hoan Kiem Lake and Ngoc Son Temple",
+            "Evening Water Puppet Show",
+            "Welcome dinner with Vietnamese cuisine"
+          ]
+        },
+        {
+          "day": 2,
+          "title": "Hanoi City Exploration",
+          "activities": [
+            "Breakfast at hotel",
+            "Visit Ho Chi Minh Mausoleum Complex",
+            "Explore One Pillar Pagoda",
+            "Visit Temple of Literature (Vietnam's first university)",
+            "Traditional Vietnamese lunch",
+            "Afternoon visit to Vietnam Museum of Ethnology",
+            "Explore local markets",
+            "Evening free to enjoy Hanoi's street food"
+          ]
+        },
+        {
+          "day": 3,
+          "title": "Halong Bay Cruise",
+          "activities": [
+            "Early breakfast and check-out",
+            "Transfer to Halong Bay (3.5 hours)",
+            "Board cruise ship and welcome drink",
+            "Cruise through Halong Bay's limestone karsts",
+            "Seafood lunch on board",
+            "Visit Sung Sot Cave (Surprise Cave)",
+            "Kayaking or swimming opportunity",
+            "Sunset viewing on deck",
+            "Dinner on board and overnight on cruise"
+          ]
+        },
+        {
+          "day": 4,
+          "title": "Halong Bay & Departure",
+          "activities": [
+            "Tai Chi session on deck at sunrise",
+            "Breakfast on board",
+            "Visit floating fishing village",
+            "Brunch before disembarkation",
+            "Transfer back to Hanoi",
+            "Drop-off at Noi Bai Airport",
+            "Departure"
+          ]
+        }
+      ],
+      "cost": {
+        "includes": [
+          "2 nights hotel in Hanoi (4-star)",
+          "1 night on Halong Bay cruise (deluxe cabin)",
+          "Daily breakfast, meals as per itinerary",
+          "All transfers by private air-conditioned vehicle",
+          "English-speaking tour guide",
+          "All entrance fees",
+          "Water Puppet Show tickets",
+          "Halong Bay cruise with all activities",
+          "Kayaking equipment",
+          "Drinking water during tours"
+        ],
+        "excludes": [
+          "International flights",
+          "Vietnam visa (if required)",
+          "Travel insurance",
+          "Personal expenses",
+          "Tips for guide and driver",
+          "Beverages on cruise",
+          "Spa services on cruise",
+          "Personal shopping"
+        ]
+      },
+      "faqIds": ["visa-vietnam", "best-time-halong", "halong-cruise-safety", "halong-packing", "extend-stay"]
+    },
+    {
+      "id": "saigon-mekong-delta",
+      "image": "/assets/images/banner2.jpg",
+      "title": "Saigon & Mekong Delta",
+      "daysRange": "4 Days",
+      "tags": ["Ho Chi Minh", "Cu Chi", "Mekong Delta"],
+      "description": "Discover Ho Chi Minh City, explore the historic Cu Chi Tunnels, cruise the Mekong River Delta, visit floating markets and Ben Thanh Market.",
+      "location": "Ho Chi Minh City, Vietnam",
+      "duration": "4 Days / 3 Nights",
+      "featured": false,
+      "overview": "Experience the dynamic energy of Southern Vietnam with our 4-Day Saigon & Mekong Delta tour. Explore the bustling streets of Ho Chi Minh City, delve into history at the Cu Chi Tunnels, and discover the unique water-based lifestyle of the Mekong Delta. This tour offers a perfect blend of urban excitement, historical significance, and rural charm.",
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Ho Chi Minh City Arrival",
+          "activities": [
+            "Airport pickup at Tan Son Nhat International Airport",
+            "Transfer to hotel and check-in",
+            "Afternoon city tour: Reunification Palace",
+            "Visit Notre-Dame Cathedral and Central Post Office",
+            "Explore Ben Thanh Market",
+            "Welcome dinner at a rooftop restaurant"
+          ]
+        },
+        {
+          "day": 2,
+          "title": "Cu Chi Tunnels & War History",
+          "activities": [
+            "Breakfast at hotel",
+            "Morning trip to Cu Chi Tunnels (70km from city)",
+            "Explore the underground tunnel network",
+            "Learn about Vietnam War history",
+            "Optional: Try firing range experience",
+            "Lunch at local restaurant",
+            "Afternoon visit to War Remnants Museum",
+            "Evening free for shopping at Nguyen Hue Walking Street"
+          ]
+        },
+        {
+          "day": 3,
+          "title": "Mekong Delta Adventure",
+          "activities": [
+            "Early breakfast at hotel",
+            "Drive to Mekong Delta (2 hours)",
+            "Visit Cai Be floating market",
+            "Boat cruise through palm-lined canals",
+            "Visit local workshops (coconut candy, rice paper)",
+            "Traditional lunch with Mekong specialties",
+            "Cycling through fruit orchards",
+            "Sampan ride through narrow canals",
+            "Return to Ho Chi Minh City"
+          ]
+        },
+        {
+          "day": 4,
+          "title": "Departure",
+          "activities": [
+            "Breakfast at hotel",
+            "Free time for last-minute shopping",
+            "Optional: Visit Jade Emperor Pagoda",
+            "Hotel check-out",
+            "Transfer to Tan Son Nhat Airport",
+            "Departure"
+          ]
+        }
+      ],
+      "cost": {
+        "includes": [
+          "3 nights accommodation in 4-star hotel",
+          "Daily breakfast at hotel",
+          "All airport transfers",
+          "Private air-conditioned transportation",
+          "English-speaking tour guide",
+          "All entrance fees as per itinerary",
+          "Mekong Delta boat trips",
+          "Bicycle rental in Mekong Delta",
+          "Welcome dinner",
+          "Lunches as mentioned"
+        ],
+        "excludes": [
+          "International flights",
+          "Vietnam visa",
+          "Travel insurance",
+          "Personal expenses",
+          "Tips for guide and driver",
+          "Meals not mentioned",
+          "Cu Chi firing range (optional)",
+          "Personal shopping"
+        ]
+      },
+      "faqIds": ["cu-chi-distance", "cu-chi-tunnels-fit", "mekong-delta-info", "packing-vietnam", "vegetarian"]
+    },
+    {
+      "id": "vietnam-cross-country-adventure",
+      "image": "/assets/images/vietnam-banner.jpg",
+      "title": "Vietnam Cross-Country Adventure",
+      "daysRange": "10 Days",
+      "tags": ["Hanoi", "Hoi An", "Hue", "Saigon"],
+      "description": "Journey from Hanoi to Ho Chi Minh City, featuring Halong Bay overnight cruise, Hoi An Ancient Town, Hue Imperial City, and multiple UNESCO World Heritage Sites.",
+      "location": "Vietnam (North to South)",
+      "duration": "10 Days / 9 Nights",
+      "featured": true,
+      "overview": "Embark on the ultimate Vietnamese adventure with our comprehensive 10-Day Cross-Country tour. Travel from the ancient capital of Hanoi to the vibrant metropolis of Ho Chi Minh City, experiencing the incredible diversity of Vietnam along the way. Visit four UNESCO World Heritage Sites, cruise through magnificent Halong Bay, explore the charming ancient town of Hoi An, and discover the imperial grandeur of Hue. This tour showcases the very best of Vietnam's culture, history, cuisine, and natural beauty.",
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Hanoi Arrival",
+          "activities": [
+            "Airport pickup at Noi Bai International Airport",
+            "Transfer to hotel in Hanoi Old Quarter",
+            "Rest and freshen up",
+            "Evening walking tour of Hanoi Old Quarter",
+            "Welcome dinner with traditional Vietnamese cuisine"
+          ]
+        },
+        {
+          "day": 2,
+          "title": "Hanoi City Tour",
+          "activities": [
+            "Breakfast at hotel",
+            "Visit Ho Chi Minh Mausoleum and Presidential Palace",
+            "Explore One Pillar Pagoda",
+            "Visit Temple of Literature",
+            "Traditional lunch",
+            "Afternoon at Vietnam Museum of Ethnology",
+            "Evening Water Puppet Show",
+            "Dinner in Old Quarter"
+          ]
+        },
+        {
+          "day": 3,
+          "title": "Halong Bay Cruise",
+          "activities": [
+            "Breakfast and hotel check-out",
+            "Transfer to Halong Bay",
+            "Board deluxe cruise ship",
+            "Cruise through limestone karsts",
+            "Visit Sung Sot Cave",
+            "Kayaking and swimming",
+            "Cooking class on board",
+            "Dinner and overnight on cruise"
+          ]
+        },
+        {
+          "day": 4,
+          "title": "Halong Bay to Hanoi, Fly to Danang",
+          "activities": [
+            "Sunrise Tai Chi on deck",
+            "Brunch on board",
+            "Disembark and transfer to Hanoi",
+            "Afternoon flight to Danang",
+            "Transfer to Hoi An",
+            "Hotel check-in",
+            "Evening free to explore Hoi An Ancient Town"
+          ]
+        },
+        {
+          "day": 5,
+          "title": "Hoi An Ancient Town",
+          "activities": [
+            "Breakfast at hotel",
+            "Walking tour of Hoi An Ancient Town (UNESCO)",
+            "Visit Japanese Covered Bridge",
+            "Explore Chinese Assembly Halls",
+            "Traditional lunch",
+            "Afternoon: Cooking class or lantern making workshop",
+            "Free time for shopping and tailoring",
+            "Evening: Lantern-lit streets and Thu Bon River"
+          ]
+        },
+        {
+          "day": 6,
+          "title": "My Son Sanctuary & Beach",
+          "activities": [
+            "Early breakfast",
+            "Visit My Son Sanctuary (UNESCO)",
+            "Explore ancient Cham temples",
+            "Return to Hoi An for lunch",
+            "Afternoon free at An Bang Beach",
+            "Optional: Spa treatment",
+            "Farewell dinner in Hoi An"
+          ]
+        },
+        {
+          "day": 7,
+          "title": "Hoi An to Hue via Hai Van Pass",
+          "activities": [
+            "Breakfast and check-out",
+            "Scenic drive over Hai Van Pass",
+            "Photo stops at panoramic viewpoints",
+            "Visit Lang Co Beach",
+            "Arrive in Hue and lunch",
+            "Afternoon: Visit Imperial Citadel (UNESCO)",
+            "Explore Forbidden Purple City",
+            "Hotel check-in"
+          ]
+        },
+        {
+          "day": 8,
+          "title": "Hue Exploration",
+          "activities": [
+            "Breakfast at hotel",
+            "Visit Thien Mu Pagoda",
+            "Perfume River cruise",
+            "Visit Royal Tombs (Tu Duc, Khai Dinh)",
+            "Traditional Hue lunch",
+            "Explore Dong Ba Market",
+            "Evening free"
+          ]
+        },
+        {
+          "day": 9,
+          "title": "Hue to Ho Chi Minh City",
+          "activities": [
+            "Breakfast and check-out",
+            "Transfer to Hue Airport",
+            "Flight to Ho Chi Minh City",
+            "Hotel check-in",
+            "Afternoon city tour: Reunification Palace",
+            "Visit War Remnants Museum",
+            "Explore Ben Thanh Market",
+            "Farewell dinner at rooftop restaurant"
+          ]
+        },
+        {
+          "day": 10,
+          "title": "Ho Chi Minh City Departure",
+          "activities": [
+            "Breakfast at hotel",
+            "Free time for shopping",
+            "Optional: Cu Chi Tunnels half-day tour",
+            "Hotel check-out",
+            "Transfer to Tan Son Nhat Airport",
+            "Departure with unforgettable memories"
+          ]
+        }
+      ],
+      "cost": {
+        "includes": [
+          "9 nights accommodation in 4-star hotels/cruise",
+          "1 night deluxe Halong Bay cruise",
+          "Daily breakfast, selected lunches and dinners",
+          "All domestic flights (Hanoi-Danang, Hue-HCMC)",
+          "Private air-conditioned transportation",
+          "English-speaking tour guides",
+          "All entrance fees as per itinerary",
+          "Water Puppet Show tickets",
+          "Cooking class in Hoi An",
+          "Perfume River cruise in Hue",
+          "All airport transfers"
+        ],
+        "excludes": [
+          "International flights",
+          "Vietnam visa",
+          "Travel insurance",
+          "Personal expenses",
+          "Tips for guides and drivers",
+          "Meals not mentioned",
+          "Optional activities",
+          "Spa treatments",
+          "Personal shopping and tailoring"
+        ]
+      },
+      "faqIds": ["fitness-level", "best-time-vietnam-cross", "hoi-an-tailoring", "domestic-flights", "extend-stay", "unesco-sites"]
+    }
+  ]
+}

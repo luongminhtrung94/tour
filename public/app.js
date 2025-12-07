@@ -18,6 +18,9 @@ const nameError = document.getElementById('name-error');
 const emailError = document.getElementById('email-error');
 const phoneError = document.getElementById('phone-error');
 
+// Only initialize form validation if form elements exist
+const formElementsExist = contactForm && nameInput && emailInput && phoneInput;
+
 // Validation Functions
 function validateName(name) {
     if (!name || name.trim().length === 0) {
@@ -55,61 +58,62 @@ function validatePhone(phone) {
     return '';
 }
 
-// Real-time Validation
-nameInput.addEventListener('blur', () => {
-    const error = validateName(nameInput.value);
-    nameError.textContent = error;
-    if (error) {
-        nameInput.classList.add('error');
-    } else {
-        nameInput.classList.remove('error');
-    }
-});
+// Real-time Validation (only if form elements exist)
+if (formElementsExist) {
+    nameInput.addEventListener('blur', () => {
+        const error = validateName(nameInput.value);
+        nameError.textContent = error;
+        if (error) {
+            nameInput.classList.add('error');
+        } else {
+            nameInput.classList.remove('error');
+        }
+    });
 
-emailInput.addEventListener('blur', () => {
-    const error = validateEmail(emailInput.value);
-    emailError.textContent = error;
-    if (error) {
-        emailInput.classList.add('error');
-    } else {
-        emailInput.classList.remove('error');
-    }
-});
+    emailInput.addEventListener('blur', () => {
+        const error = validateEmail(emailInput.value);
+        emailError.textContent = error;
+        if (error) {
+            emailInput.classList.add('error');
+        } else {
+            emailInput.classList.remove('error');
+        }
+    });
 
-phoneInput.addEventListener('blur', () => {
-    const error = validatePhone(phoneInput.value);
-    phoneError.textContent = error;
-    if (error) {
-        phoneInput.classList.add('error');
-    } else {
-        phoneInput.classList.remove('error');
-    }
-});
+    phoneInput.addEventListener('blur', () => {
+        const error = validatePhone(phoneInput.value);
+        phoneError.textContent = error;
+        if (error) {
+            phoneInput.classList.add('error');
+        } else {
+            phoneInput.classList.remove('error');
+        }
+    });
 
-// Clear error on input
-nameInput.addEventListener('input', () => {
-    if (nameInput.classList.contains('error')) {
-        nameError.textContent = '';
-        nameInput.classList.remove('error');
-    }
-});
+    // Clear error on input
+    nameInput.addEventListener('input', () => {
+        if (nameInput.classList.contains('error')) {
+            nameError.textContent = '';
+            nameInput.classList.remove('error');
+        }
+    });
 
-emailInput.addEventListener('input', () => {
-    if (emailInput.classList.contains('error')) {
-        emailError.textContent = '';
-        emailInput.classList.remove('error');
-    }
-});
+    emailInput.addEventListener('input', () => {
+        if (emailInput.classList.contains('error')) {
+            emailError.textContent = '';
+            emailInput.classList.remove('error');
+        }
+    });
 
-phoneInput.addEventListener('input', () => {
-    if (phoneInput.classList.contains('error')) {
-        phoneError.textContent = '';
-        phoneInput.classList.remove('error');
-    }
-});
+    phoneInput.addEventListener('input', () => {
+        if (phoneInput.classList.contains('error')) {
+            phoneError.textContent = '';
+            phoneInput.classList.remove('error');
+        }
+    });
 
-// Form Submission
-contactForm.addEventListener('submit', async (e) => {
+    // Form Submission
+    contactForm.addEventListener('submit', async (e) => {
     e.preventDefault();
 
     // Clear previous messages
@@ -193,7 +197,8 @@ contactForm.addEventListener('submit', async (e) => {
         submitBtn.disabled = false;
         submitBtn.textContent = 'Send Message';
     }
-});
+    });
+}
 
 // Smooth Scrolling for Navigation Links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -208,4 +213,59 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+// ==========================================
+// TOUR DETAIL PAGE - TAB FUNCTIONALITY
+// ==========================================
+
+// Tab Switching
+const tourTabs = document.querySelectorAll('.tour-tab');
+const tourTabPanels = document.querySelectorAll('.tour-tab-panel');
+
+if (tourTabs.length > 0) {
+    tourTabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            const targetTab = tab.getAttribute('data-tab');
+            
+            // Remove active class from all tabs and panels
+            tourTabs.forEach(t => t.classList.remove('active'));
+            tourTabPanels.forEach(panel => panel.classList.remove('active'));
+            
+            // Add active class to clicked tab and corresponding panel
+            tab.classList.add('active');
+            const targetPanel = document.getElementById(targetTab);
+            if (targetPanel) {
+                targetPanel.classList.add('active');
+            }
+        });
+    });
+}
+
+// ==========================================
+// TOUR DETAIL PAGE - FAQ ACCORDION
+// ==========================================
+
+const faqItems = document.querySelectorAll('.faq-item');
+
+if (faqItems.length > 0) {
+    faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        
+        question.addEventListener('click', () => {
+            const isActive = item.classList.contains('active');
+            
+            // Close all other FAQ items (optional: remove this block for multiple open)
+            faqItems.forEach(otherItem => {
+                otherItem.classList.remove('active');
+                otherItem.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+            });
+            
+            // Toggle current item
+            if (!isActive) {
+                item.classList.add('active');
+                question.setAttribute('aria-expanded', 'true');
+            }
+        });
+    });
+}
 

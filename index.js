@@ -2,10 +2,15 @@ const express = require('express');
 const cors = require('cors');
 const path = require('path');
 const nodemailer = require('nodemailer');
+const fs = require('fs');
 require('dotenv').config();
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+
+// Set EJS as the view engine
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'views'));
 
 // Middleware
 app.use(cors());
@@ -14,6 +19,60 @@ app.use(express.urlencoded({ extended: true }));
 
 // Serve static frontend files
 app.use(express.static(path.join(__dirname, 'public')));
+
+// Load Tour Data from JSON
+const toursData = JSON.parse(fs.readFileSync(path.join(__dirname, 'data', 'tours.json'), 'utf8'));
+const faqsData = JSON.parse(fs.readFileSync(path.join(__dirname, 'data', 'faqs.json'), 'utf8'));
+
+// Create a map of all FAQs by ID for quick lookup
+const faqMap = {};
+['general', 'thailand', 'vietnam'].forEach(category => {
+    faqsData[category].forEach(faq => {
+        faqMap[faq.id] = faq;
+    });
+});
+
+// Helper function to resolve FAQ IDs to full FAQ objects
+function resolveFaqs(tour) {
+    if (tour.faqIds && Array.isArray(tour.faqIds)) {
+        tour.faq = tour.faqIds
+            .map(id => faqMap[id])
+            .filter(faq => faq !== undefined);
+    }
+    return tour;
+}
+
+// Process tours to include resolved FAQs
+const thailandTours = toursData.thailand.map(tour => resolveFaqs({ ...tour }));
+const vietnamTours = toursData.vietnam.map(tour => resolveFaqs({ ...tour }));
+
+// Helper function to find tour by ID
+function findTourById(tourId) {
+    const allTours = [...thailandTours, ...vietnamTours];
+    return allTours.find(tour => tour.id === tourId);
+}
+
+// Page Routes
+app.get('/', (req, res) => {
+    res.render('index', { thailandTours, vietnamTours });
+});
+
+app.get('/thailand', (req, res) => {
+    res.render('thailand', { tours: thailandTours });
+});
+
+app.get('/vietnam', (req, res) => {
+    res.render('vietnam', { tours: vietnamTours });
+});
+
+// Tour Detail Page
+app.get('/tour/:id', (req, res) => {
+    const tour = findTourById(req.params.id);
+    if (!tour) {
+        return res.status(404).render('index', { thailandTours, vietnamTours });
+    }
+    res.render('tour-detail', { tour });
+});
 
 // Input sanitization helper
 function sanitizeInput(str) {
@@ -207,9 +266,9 @@ app.get('/healthz', (req, res) => {
     res.status(200).json({ status: 'ok', timestamp: new Date().toISOString() });
 });
 
-// Catch-all route - serve index.html for any unmatched routes
+// Catch-all route - render index for any unmatched routes
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+    res.render('index', { thailandTours, vietnamTours });
 });
 
 // Start server only when running locally (not on Vercel)

@@ -1,0 +1,134 @@
+{
+  "general": [
+    {
+      "id": "visa-thailand",
+      "question": "Do I need a visa to visit Thailand?",
+      "answer": "Many nationalities can enter Thailand visa-free for up to 30 days (extendable to 60 days). Check with the Thai embassy in your country for specific requirements based on your nationality."
+    },
+    {
+      "id": "visa-vietnam",
+      "question": "Do I need a visa to visit Vietnam?",
+      "answer": "Most nationalities require a visa to visit Vietnam. You can apply for an e-visa online or obtain a visa on arrival with a pre-approved letter. Some nationalities are exempt for stays up to 15-45 days. Check current requirements for your nationality."
+    },
+    {
+      "id": "currency-thailand",
+      "question": "What currency is used and can I use credit cards?",
+      "answer": "Thai Baht (THB) is the local currency. Credit cards are widely accepted in hotels, shopping malls, and restaurants. However, carry cash for markets, street food, and smaller establishments. ATMs are readily available."
+    },
+    {
+      "id": "family-friendly",
+      "question": "Is this tour suitable for families with children?",
+      "answer": "Yes, this tour is family-friendly and suitable for children of all ages. We can adjust the pace and activities to accommodate families. Please inform us in advance if you're traveling with young children."
+    },
+    {
+      "id": "customization",
+      "question": "Can the itinerary be customized?",
+      "answer": "Yes, we can customize the itinerary based on your preferences. Contact us to discuss any modifications, additional activities, or special requirements you may have."
+    },
+    {
+      "id": "vegetarian",
+      "question": "Is this tour suitable for vegetarians?",
+      "answer": "Yes, both Thai and Vietnamese cuisines offer many vegetarian options. Please inform us of any dietary requirements in advance, and we'll ensure suitable meals are arranged throughout the tour."
+    },
+    {
+      "id": "fitness-level",
+      "question": "How fit do I need to be for this tour?",
+      "answer": "This tour involves moderate walking and some stairs at temples and historical sites. A reasonable level of fitness is recommended. We can arrange alternatives for those with mobility concerns."
+    },
+    {
+      "id": "extend-stay",
+      "question": "Can I extend my stay at any destination?",
+      "answer": "Absolutely! We can customize the itinerary and arrange additional nights at any location. Contact us to discuss your preferences."
+    }
+  ],
+  "thailand": [
+    {
+      "id": "best-time-bangkok",
+      "question": "What is the best time to visit Bangkok?",
+      "answer": "The best time to visit Bangkok is from November to February when the weather is cooler and drier. However, Bangkok can be visited year-round. The rainy season (June-October) offers fewer crowds and lower prices."
+    },
+    {
+      "id": "temple-dress-code",
+      "question": "What should I wear when visiting temples?",
+      "answer": "When visiting temples in Thailand, dress modestly. Cover your shoulders and knees. Long pants or skirts and shirts with sleeves are recommended. Remove shoes before entering temple buildings. Some temples provide cover-ups for visitors."
+    },
+    {
+      "id": "bangkok-pattaya-distance",
+      "question": "How far is Pattaya from Bangkok?",
+      "answer": "Pattaya is approximately 150 kilometers (93 miles) southeast of Bangkok. The journey takes about 1.5-2 hours by private vehicle, depending on traffic conditions."
+    },
+    {
+      "id": "coral-island-activities",
+      "question": "What water activities are available at Coral Island?",
+      "answer": "Coral Island offers various water activities including snorkeling, parasailing, jet skiing, banana boat rides, and sea walking. Basic snorkeling equipment is included; other activities are available at additional cost."
+    },
+    {
+      "id": "alcazar-show",
+      "question": "Is the Alcazar Show appropriate for all ages?",
+      "answer": "The Alcazar Cabaret Show is a world-famous entertainment show featuring elaborate costumes and performances. It's generally suitable for all ages, though parental discretion is advised for younger children."
+    },
+    {
+      "id": "packing-thailand",
+      "question": "What should I pack for this tour?",
+      "answer": "Pack light, breathable clothing, swimwear, sunscreen, sunglasses, comfortable walking shoes, and modest attire for temple visits. Don't forget your camera and any personal medications."
+    }
+  ],
+  "vietnam": [
+    {
+      "id": "best-time-halong",
+      "question": "What is the best time to visit Halong Bay?",
+      "answer": "The best time to visit Halong Bay is from October to April when the weather is pleasant with less rainfall. March-April and September-November offer the best conditions for cruising and outdoor activities."
+    },
+    {
+      "id": "halong-cruise-safety",
+      "question": "Is the Halong Bay cruise safe?",
+      "answer": "Yes, our cruise partners maintain high safety standards with licensed boats, life jackets, and trained crew. Cruises may be modified or cancelled during severe weather for passenger safety."
+    },
+    {
+      "id": "halong-packing",
+      "question": "What should I bring for the Halong Bay cruise?",
+      "answer": "Bring light clothing, swimwear, sunscreen, sunglasses, camera, motion sickness medication if needed, and a light jacket for air-conditioned areas. The cruise provides towels and basic toiletries."
+    },
+    {
+      "id": "cu-chi-distance",
+      "question": "How long does it take to reach Cu Chi Tunnels?",
+      "answer": "Cu Chi Tunnels are located about 70km northwest of Ho Chi Minh City. The journey takes approximately 1.5-2 hours by private vehicle, depending on traffic."
+    },
+    {
+      "id": "cu-chi-tunnels-fit",
+      "question": "Can I fit through the Cu Chi Tunnels?",
+      "answer": "Some sections of the tunnels have been enlarged for tourists. However, they remain quite narrow and low. If you're claustrophobic or have mobility issues, you can observe from above ground while others explore."
+    },
+    {
+      "id": "mekong-delta-info",
+      "question": "What is the Mekong Delta like?",
+      "answer": "The Mekong Delta is a vast network of rivers, swamps, and islands. It's known as Vietnam's 'rice bowl' and is famous for floating markets, fruit orchards, and traditional villages. The area offers a glimpse into rural Vietnamese life."
+    },
+    {
+      "id": "packing-vietnam",
+      "question": "What should I wear for this tour?",
+      "answer": "Wear comfortable, light clothing suitable for tropical weather. For Cu Chi Tunnels, wear closed-toe shoes and clothes you don't mind getting dirty. Bring sunscreen, a hat, and insect repellent for the Mekong Delta."
+    },
+    {
+      "id": "best-time-vietnam-cross",
+      "question": "What's the best time for this cross-country tour?",
+      "answer": "The best time is from February to April or August to October. Vietnam's climate varies by region, so expect different weather in the north and south. We provide weather guidance before your trip."
+    },
+    {
+      "id": "hoi-an-tailoring",
+      "question": "Can I get clothes tailored in Hoi An?",
+      "answer": "Yes! Hoi An is famous for its tailors. You'll have free time to visit tailors, and we can recommend reputable shops. Most can complete orders within 24-48 hours with fittings."
+    },
+    {
+      "id": "domestic-flights",
+      "question": "Are the domestic flights included?",
+      "answer": "Yes, two domestic flights are included: Hanoi to Danang and Hue to Ho Chi Minh City. These significantly reduce travel time and allow you to see more of Vietnam."
+    },
+    {
+      "id": "unesco-sites",
+      "question": "What UNESCO sites will I visit?",
+      "answer": "This tour includes four UNESCO World Heritage Sites: Halong Bay, Hoi An Ancient Town, My Son Sanctuary, and the Complex of Hue Monuments. Each offers unique historical and cultural significance."
+    }
+  ]
+}
+

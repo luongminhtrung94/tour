@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>TOPTHAI TRAVEL COMPANY - Thailand & Vietnam Tours</title>
+		<link rel="stylesheet" href="/styles.css" />
+	</head>
+	<body>
+		<%- include('partials/header') %>
+
+		<img src="/assets/images/thailand-vietnam-banner.jpg" alt="TOPTHAI TRAVEL" class="banner">
+
+		<!-- About Section -->
+		<section id="about" class="section about">
+			<div class="container">
+				<h2 class="section-title">About TOPTHAI TRAVEL COMPANY</h2>
+				<div class="about-content">
+					<p>
+						Welcome to TOPTHAI TRAVEL COMPANY, your premier travel partner for
+						exploring the wonders of Thailand and Vietnam. With years of
+						experience and local expertise, we craft unforgettable journeys that
+						showcase the rich culture, stunning landscapes, and vibrant
+						traditions of Southeast Asia.
+					</p>
+
+					<div class="info-grid">
+						<div class="info-card">
+							<h3>📞 Hotlines</h3>
+							<p>
+								<strong>Thailand:</strong>
+								<a href="tel:+66982468010">(+66) 98-246-8010</a>
+							</p>
+							<p>
+								<strong>Vietnam:</strong>
+								<a href="tel:+84944362139">(+84) 944-36-21-39</a>
+							</p>
+						</div>
+						<div class="info-card">
+							<h3>📍 Address</h3>
+							<p>32 Lat Krabang 20, Lat Krabang<br />Bangkok 10520, Thailand</p>
+						</div>
+						<div class="info-card">
+							<h3>📧 Email</h3>
+							<p>
+								<a href="mailto:topthaiasia@gmail.com">topthaiasia@gmail.com</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Thailand Tours Section -->
+		<section id="thailand-tours" class="section tours thailand-tours">
+			<div class="container">
+				<h2 class="section-title">Thailand Tour Packages</h2>
+				<p class="section-subtitle">
+					Experience the Land of Smiles with our carefully curated tour programs
+				</p>
+
+				<div class="tours-list">
+					<% thailandTours.forEach(function(tour) { %>
+						<%- include('partials/tour', { tour: tour }) %>
+					<% }); %>
+				</div>
+			</div>
+		</section>
+
+		<!-- Vietnam Tours Section -->
+		<section id="vietnam-tours" class="section tours vietnam-tours">
+			<div class="container">
+				<h2 class="section-title">Vietnam Tour Packages</h2>
+				<p class="section-subtitle">
+					Discover Vietnam's rich heritage and breathtaking landscapes
+				</p>
+
+				<div class="tours-list">
+					<% vietnamTours.forEach(function(tour) { %>
+						<%- include('partials/tour', { tour: tour }) %>
+					<% }); %>
+				</div>
+			</div>
+		</section>
+
+		<%- include('partials/contact-form') %>
+
+		<%- include('partials/footer') %>
+
+		<script src="/app.js"></script>
+	</body>
+</html>
+
