@@ -9,6 +9,7 @@ const formMessage = document.getElementById('formMessage');
 // Input Fields
 const nameInput = document.getElementById('name');
 const emailInput = document.getElementById('email');
+const phoneCodeSelect = document.getElementById('phoneCode');
 const phoneInput = document.getElementById('phone');
 const messageInput = document.getElementById('message');
 
@@ -135,11 +136,12 @@ contactForm.addEventListener('submit', async (e) => {
         return;
     }
 
-    // Prepare form data
+    // Prepare form data with phone code
+    const fullPhone = `${phoneCodeSelect.value} ${phoneInput.value.trim()}`;
     const formData = {
         name: nameInput.value.trim(),
         email: emailInput.value.trim(),
-        phone: phoneInput.value.trim(),
+        phone: fullPhone,
         message: messageInput.value.trim()
     };
 
