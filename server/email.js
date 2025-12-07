@@ -19,8 +19,8 @@ function createTransporter() {
 async function sendContactEmail(contactData, retryCount = 1) {
     const { name, email, phone, message } = contactData;
     
-    const fromEmail = process.env.FROM_EMAIL || process.env.SMTP_USER;
-    const toEmail = process.env.TO_EMAIL || 'topthaiasia@gmail.com';
+    const fromEmail = process.env.SMTP_USER;
+    const toEmail = 'abc@gmail.com';
 
     const mailOptions = {
         from: `"TOPTHAI TRAVEL Website" <${fromEmail}>`,

@@ -1,6 +1,5 @@
 const express = require('express');
 const router = express.Router();
-const { insertContact } = require('../db');
 const { sendContactEmail } = require('../email');
 
 // Input sanitization helper
@@ -75,46 +74,29 @@ router.post('/', async (req, res) => {
         const sanitizedPhone = sanitizeInput(phone);
         const sanitizedMessage = message ? sanitizeInput(message) : '';
 
-        // Save to database
-        const result = await insertContact(
-            sanitizedName,
-            sanitizedEmail,
-            sanitizedPhone,
-            sanitizedMessage
-        );
-
-        console.log(`Contact saved to database: ID ${result.id}, Name: ${sanitizedName}`);
-
-        // Send email notification (don't block response on email failure)
-        sendContactEmail({
+        // Send email notification
+        await sendContactEmail({
             name: sanitizedName,
             email: sanitizedEmail,
             phone: sanitizedPhone,
             message: sanitizedMessage
-        })
-        .then(() => {
-            console.log('Email notification sent successfully');
-        })
-        .catch((error) => {
-            console.error('Failed to send email notification:', error.message);
-            // Email failure is logged but doesn't fail the request
         });
+
+        console.log(`Contact form submitted: Name: ${sanitizedName}, Email: ${sanitizedEmail}`);
 
         // Return success
         res.json({ 
             ok: true, 
-            message: 'Contact form submitted successfully',
-            id: result.id 
+            message: 'Contact form submitted successfully'
         });
 
     } catch (error) {
         console.error('Error processing contact form:', error);
         res.status(500).json({ 
             ok: false, 
-            error: 'Internal server error. Please try again later.' 
+            error: 'Failed to send message. Please try again later.' 
         });
     }
 });
 
 module.exports = router;
-

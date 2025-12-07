@@ -5,7 +5,6 @@ const path = require('path');
 require('dotenv').config();
 
 const contactRouter = require('./routes/contact');
-const { closeDatabase } = require('./db');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -63,7 +62,6 @@ const server = app.listen(PORT, '0.0.0.0', () => {
     console.log('='.repeat(50));
     console.log(`Server running on port ${PORT}`);
     console.log(`Environment: ${process.env.NODE_ENV || 'development'}`);
-    console.log(`Database: ${process.env.DATABASE_URL || 'data/topthai.db'}`);
     console.log('='.repeat(50));
 });
 
@@ -73,16 +71,7 @@ function gracefulShutdown(signal) {
     
     server.close(() => {
         console.log('HTTP server closed');
-        
-        closeDatabase()
-            .then(() => {
-                console.log('Database closed');
-                process.exit(0);
-            })
-            .catch((err) => {
-                console.error('Error closing database:', err);
-                process.exit(1);
-            });
+        process.exit(0);
     });
 
     // Force shutdown after 10 seconds
@@ -104,4 +93,3 @@ process.on('uncaughtException', (err) => {
 process.on('unhandledRejection', (reason, promise) => {
     console.error('Unhandled Rejection at:', promise, 'reason:', reason);
 });
-
