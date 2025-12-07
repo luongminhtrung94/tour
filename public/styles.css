@@ -231,6 +231,142 @@ body::before {
     text-decoration: underline;
 }
 
+/* Unified Contact Card for About Section */
+.contact-unified-card {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.08);
+    margin-top: 2.5rem;
+    overflow: hidden;
+}
+
+.contact-unified-item {
+    border-bottom: 1px solid #f0f2f5;
+}
+
+.contact-unified-item:last-child {
+    border-bottom: none;
+}
+
+.contact-unified-link {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    padding: 1.25rem 1.75rem;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    cursor: pointer;
+}
+
+a.contact-unified-link:hover {
+    background: #f8f9fa;
+}
+
+.contact-unified-icon {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    transition: all 0.25s ease;
+}
+
+a.contact-unified-link:hover .contact-unified-icon {
+    transform: scale(1.1);
+}
+
+/* Icon color variations */
+.contact-link-hotline .contact-unified-icon {
+    background: linear-gradient(135deg, rgba(231, 76, 60, 0.12) 0%, rgba(192, 57, 43, 0.06) 100%);
+    color: #e74c3c;
+}
+
+.contact-link-address .contact-unified-icon {
+    background: linear-gradient(135deg, rgba(52, 152, 219, 0.12) 0%, rgba(41, 128, 185, 0.06) 100%);
+    color: #3498db;
+}
+
+.contact-link-email .contact-unified-icon {
+    background: linear-gradient(135deg, rgba(155, 89, 182, 0.12) 0%, rgba(142, 68, 173, 0.06) 100%);
+    color: #9b59b6;
+}
+
+.contact-link-instagram .contact-unified-icon {
+    background: linear-gradient(135deg, rgba(225, 48, 108, 0.12) 0%, rgba(193, 53, 132, 0.06) 100%);
+    color: #e1306c;
+}
+
+.contact-link-whatsapp .contact-unified-icon {
+    background: linear-gradient(135deg, rgba(37, 211, 102, 0.12) 0%, rgba(18, 140, 126, 0.06) 100%);
+    color: #25d366;
+}
+
+.contact-unified-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.contact-unified-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #95a5a6;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.contact-unified-value {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+/* Hover color effects */
+.contact-link-hotline:hover .contact-unified-value {
+    color: #e74c3c;
+}
+
+.contact-link-email:hover .contact-unified-value {
+    color: #9b59b6;
+}
+
+.contact-link-instagram:hover .contact-unified-value {
+    color: #e1306c;
+}
+
+.contact-link-whatsapp:hover .contact-unified-value {
+    color: #25d366;
+}
+
+/* Responsive for Unified Contact Card */
+@media (max-width: 768px) {
+    .contact-unified-card {
+        border-radius: 16px;
+    }
+    
+    .contact-unified-link {
+        padding: 1rem 1.25rem;
+        gap: 1rem;
+    }
+    
+    .contact-unified-icon {
+        width: 42px;
+        height: 42px;
+        min-width: 42px;
+    }
+    
+    .contact-unified-icon svg {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .contact-unified-value {
+        font-size: 0.9rem;
+    }
+}
+
 /* Tours Section */
 .tours-grid {
     display: grid;
@@ -686,7 +822,7 @@ body::before {
 
 /* Footer */
 .footer {
-    background: #8b008b;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
     padding: 2rem 20px;
     text-align: center;
