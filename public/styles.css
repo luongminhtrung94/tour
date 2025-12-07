@@ -44,6 +44,14 @@ body {
     gap: 2rem;
 }
 
+.banner{
+    display: block;
+    width: 100%;
+    max-width: 1024px;
+    height: 100%;
+    margin: 0 auto;
+}
+
 .nav a {
     text-decoration: none;
     color: #333;
