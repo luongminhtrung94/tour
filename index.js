@@ -78,7 +78,7 @@ async function sendContactEmail(contactData) {
     const { name, email, phone, message } = contactData;
     
     const fromEmail = process.env.SMTP_USER;
-    const toEmail = 'abc@gmail.com';
+    const toEmail = process.env.TO_EMAIL;
 
     const mailOptions = {
         from: `"TOPTHAI TRAVEL Website" <${fromEmail}>`,
