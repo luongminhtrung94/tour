@@ -2,11 +2,11 @@
   "thailand": [
     {
       "id": "4-day-thailand-explorer",
-      "image": "/assets/images/thailand-banner.jpg",
+      "image": "/assets/images/thailand-4d-3nbanner.jpg",
       "title": "4-Day Thailand Explorer",
       "daysRange": "4 Days",
-      "tags": ["Bangkok", "Temples", "Culture"],
-      "description": "Experience the best of Bangkok with visits to the Grand Palace, floating markets, traditional Thai massage, and a scenic Chao Phraya River cruise.",
+      "tags": ["Bangkok", "Damnoen Saduak", "Dinner Cruise Chaophaya"],
+      "description": "Experience the best of Bangkok with visits to the Grand Palace, floating markets, and a scenic Chao Phraya River cruise.",
       "location": "Bangkok, Thailand",
       "duration": "4 Days / 3 Nights",
       "featured": false,
@@ -19,7 +19,7 @@
             "Airport pickup and welcome by our English-speaking guide",
             "Transfer to hotel and check-in",
             "Free time to rest and freshen up",
-            "Evening welcome dinner at a traditional Thai restaurant",
+            "Evening Drive go to Chinatown free & dinner at a traditional Thai restaurant"  ,
             "Optional: Night market exploration"
           ]
         },
@@ -32,6 +32,7 @@
             "Explore Wat Phra Kaew (Temple of the Emerald Buddha)",
             "Lunch at a local restaurant",
             "Visit Wat Pho (Temple of the Reclining Buddha)",
+	    "Free time for shopping at MBK/Siam Paragon/Platinum Mall",
             "Traditional Thai massage experience",
             "Return to hotel"
           ]
@@ -40,13 +41,15 @@
           "day": 3,
           "title": "Floating Market & River Cruise",
           "activities": [
-            "Early morning departure to Damnoen Saduak Floating Market",
+	    "Breakfast at hotel",
+	    "Early morning departure to Mae Klong Railway Market (Hoop Rom Market)",
+            "Damnoen Saduak Floating Market",
             "Boat ride through the colorful floating market",
             "Shopping for local handicrafts and souvenirs",
-            "Lunch at riverside restaurant",
-            "Afternoon Chao Phraya River cruise",
-            "Visit Wat Arun (Temple of Dawn)",
-            "Evening free for shopping at MBK or Siam Paragon"
+            "Lunch at riverside restaurant by your own ",
+            "Afternoon driver will take you back to Bangkok ",
+            "Visit Icon Siam - Thailand's Luxury reiverside mall with indoor floating market",
+            "Evening Enjoy a romantic buffet dinner on the Cruise "
           ]
         },
         {
@@ -65,14 +68,13 @@
         "includes": [
           "3 nights accommodation in 4-star hotel",
           "Daily breakfast at hotel",
+	  "1 lunch & 1 dinner buffet on the cruise",
           "All airport transfers",
           "Air-conditioned transportation throughout",
           "English-speaking tour guide",
           "All entrance fees as per itinerary",
           "Floating market boat ride",
-          "Chao Phraya River cruise",
-          "Traditional Thai massage (1 hour)",
-          "Welcome dinner"
+          "Chao Phraya River cruise"
         ],
         "excludes": [
           "International airfare",
@@ -89,10 +91,10 @@
     },
     {
       "id": "5-day-thailand-paradise",
-      "image": "/assets/images/banner.jpg",
+      "image": "/assets/images/bkk-pty-ayt-5d4nbanner.jpg",
       "title": "5-Day Thailand Paradise",
       "daysRange": "5 Days",
-      "tags": ["Bangkok", "Pattaya", "Beach"],
+      "tags": ["Bangkok", "Pattaya", "Ayutthaya"],
       "description": "Discover Bangkok city highlights, explore Ayutthaya Historical Park, enjoy Pattaya beaches, visit Coral Island, and experience the famous Alcazar Cabaret Show.",
       "location": "Bangkok & Pattaya, Thailand",
       "duration": "5 Days / 4 Nights",
@@ -101,65 +103,64 @@
       "itinerary": [
         {
           "day": 1,
-          "title": "Bangkok Arrival & City Tour",
+          "title": " ARRIVAL – PATTAYA – THE SANCTUARY OF TRUTH",
           "activities": [
             "Warm welcome at Suvarnabhumi Airport",
-            "Transfer to hotel and check-in",
-            "Afternoon Bangkok city orientation tour",
-            "Visit Wat Traimit (Golden Buddha Temple)",
-            "Explore Chinatown and Yaowarat Road",
-            "Welcome dinner with traditional Thai performance"
+            "Meet the guide and transfer directly to Pattaya.",
+            " Visit the impressive Sanctuary of Truth, a 100% wooden architectural masterpiece symbolizing Thai culture, philosophy, and craftsmanship.",
+            "Transfer to the hotel for check-in.",
+            "Free time at leisure. Dinner on your own and explore Pattaya city at night."
           ]
         },
         {
           "day": 2,
-          "title": "Ayutthaya Historical Park",
+          "title": "CORAL ISLAND (KOH LARN) – ALCAZAR SHOW – NIGHT DISCOVERY",
           "activities": [
             "Breakfast at hotel",
-            "Full-day excursion to Ayutthaya (UNESCO World Heritage Site)",
-            "Visit Wat Mahathat (famous Buddha head in tree roots)",
-            "Explore Wat Phra Si Sanphet",
-            "Lunch at local restaurant",
-            "Visit Ayutthaya Historical Study Center",
-            "Return to Bangkok",
-            "Evening free for shopping"
+            "Transfer to the pier and take a speedboat to Coral Island (Koh Larn).",
+            "Free time for swimming, relaxing, or joining optional water sports (parasailing, sea walking, jet ski…).for your own ",
+            "Lunch on the island.",
+            "Return to the mainland and back to the hotel for refreshment and rest.",
+            "In the afternoon, enjoy the world-famous Alcazar Cabaret Show, a colorful and glamorous performance.",
+            "Free evening for your own dinner and explore Pattaya nightlife: Walking Street, beach road, café, bars…"
           ]
         },
         {
           "day": 3,
-          "title": "Bangkok to Pattaya",
+          "title": "PATTAYA → BANGKOK – GRAND PALACE – WAT PHO",
           "activities": [
             "Breakfast and hotel check-out",
-            "Transfer to Pattaya (approximately 2 hours)",
-            "Visit Nong Nooch Tropical Garden",
-            "Enjoy cultural show and elephant performance",
-            "Lunch at the garden",
-            "Hotel check-in in Pattaya",
-            "Evening: Famous Alcazar Cabaret Show"
+            "Drive back to Bangkok.",
+            "Visit the majestic Grand Palace, home of the Emerald Buddha – the most important royal landmark in Thailand.",
+            "Lunch at a local Thai restaurant.",
+            "Continue to Wat Pho, famous for the Reclining Buddha and known as the birthplace of traditional Thai massage.",
+            "Transfer to the hotel for check-in.",
+            "Free evening to relax or explore Bangkok on your own."
           ]
         },
         {
           "day": 4,
-          "title": "Coral Island Adventure",
+          "title": "AYUTTHAYA ANCIENT CITY – SHOPPING – CHINATOWN",
           "activities": [
             "Breakfast at hotel",
-            "Speedboat transfer to Coral Island (Koh Larn)",
-            "Beach activities: swimming, snorkeling, banana boat",
-            "Seafood lunch on the island",
-            "Free time to relax on the beach",
-            "Return to Pattaya",
-            "Evening free to explore Walking Street"
+            "Depart for Ayutthaya, the ancient capital and UNESCO World Heritage Site.",
+            "Visit Wat Mahathat, known for the Buddha head embraced by tree roots.",
+            "Visit Wat Lokayasutharam, home to a giant outdoor reclining Buddha.",
+            "Lunch at a local restaurant.",
+            "Return to Bangkok.",
+            "Free shopping time at MBK Center or Siam Paragon.",
+	    "Visit Chinatown to enjoy street food and bustling night atmosphere.",
+	    "Return to the hotel."
           ]
         },
         {
           "day": 5,
-          "title": "Departure",
+          "title": "CHECK OUT – CENTRAL VILLAGE OUTLET – AIRPORT DEPARTURE",
           "activities": [
             "Breakfast at hotel",
-            "Free time for shopping at Pattaya Floating Market",
-            "Hotel check-out",
-            "Transfer to Suvarnabhumi Airport",
-            "Departure with wonderful memories"
+            "Visit Central Village Luxury Outlet for last-minute shopping.",
+            "Transfer to Suvarnabhumi Airport for your departure flight.",
+            "End of services – Thank you & goodbye!"
           ]
         }
       ],
@@ -167,15 +168,12 @@
         "includes": [
           "4 nights accommodation (2 nights Bangkok, 2 nights Pattaya)",
           "Daily breakfast at hotels",
-          "All airport and inter-city transfers",
           "Air-conditioned transportation",
           "English-speaking tour guide throughout",
           "All entrance fees as per itinerary",
           "Speedboat to Coral Island",
-          "Snorkeling equipment",
           "Alcazar Cabaret Show tickets",
-          "Welcome dinner with show",
-          "Lunches as mentioned in itinerary"
+          "have 3 lunchs "
         ],
         "excludes": [
           "International airfare",
