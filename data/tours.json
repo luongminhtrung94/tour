@@ -68,7 +68,7 @@
         "includes": [
           "3 nights accommodation in 4-star hotel",
           "Daily breakfast at hotel",
-	  "1 lunch & 1 dinner buffet on the cruise",
+	  "3 Night in hotel Bangkok\n\t  ",1, "lunch & 1 dinner buffet on the cruise",
           "All airport transfers",
           "Air-conditioned transportation throughout",
           "English-speaking tour guide",
@@ -191,53 +191,49 @@
   ],
   "vietnam": [
     {
-      "id": "hanoi-heritage-tour",
+      "id": "HANOI-NINHBINH-HALONGBAY",
       "image": "/assets/images/vietnam-banner.jpg",
-      "title": "Hanoi Heritage Tour",
+      "title": "HANOI NINHBINH HALONG BAY TOUR 4DAY3NIGHT",
       "daysRange": "4 Days",
-      "tags": ["Hanoi", "Halong Bay", "Heritage"],
+      "tags": ["HANOI", "NINH BINH", "HALONG BAY"],
       "description": "Explore Hanoi Old Quarter, cruise through stunning Halong Bay, enjoy traditional Water Puppet Show, and visit the historic Temple of Literature.",
       "location": "Hanoi & Halong Bay, Vietnam",
       "duration": "4 Days / 3 Nights",
       "featured": false,
-      "overview": "Discover the timeless charm of Northern Vietnam with our 4-Day Hanoi Heritage Tour. Journey through Hanoi's atmospheric Old Quarter, where ancient traditions meet vibrant street life. Experience the breathtaking beauty of Halong Bay, a UNESCO World Heritage Site with its thousands of limestone karsts rising from emerald waters. This tour perfectly captures the essence of Vietnamese culture, history, and natural beauty.",
+      "overview": "Discover the best of Northern Vietnam in an unforgettable 4-day journey crafted for international travelers. This itinerary combines the vibrant culture of Hanoi, the majestic limestone landscapes of Ninh Binh, and the world-famous Ha Long Bay cruise experience. Travelers will enjoy a balance of guided activities and personal free time, with comfortable accommodation and daily breakfast included.\n\nBegin your adventure in Hanoi, Vietnam’s historic capital, where ancient temples meet bustling streets and French colonial charm. Continue to Ninh Binh, known as “Ha Long Bay on land,” for a scenic sampan boat ride through rice valleys and towering karst formations. Conclude your trip with an overnight cruise in Ha Long Bay, a UNESCO World Heritage site featuring emerald waters, mysterious caves, and peaceful sunsets.\n\nThis 4-day tour is ideal for visitors seeking a compact yet immersive Northern Vietnam experience, combining culture, nature, and relaxation.",
       "itinerary": [
         {
           "day": 1,
-          "title": "Hanoi Arrival",
+          "title": "Hanoi Arrival - City Highlights",
           "activities": [
             "Airport pickup at Noi Bai International Airport",
             "Transfer to hotel in Hanoi Old Quarter",
             "Check-in and rest",
-            "Afternoon walking tour of Hanoi Old Quarter",
+            "Explore Old Quarter by walking tour",
             "Visit Hoan Kiem Lake and Ngoc Son Temple",
-            "Evening Water Puppet Show",
-            "Welcome dinner with Vietnamese cuisine"
+            "Optional evening activities: Water Puppet show / street-food exploring"
           ]
         },
         {
           "day": 2,
-          "title": "Hanoi City Exploration",
+          "title": "Hanoi – Ninh Binh (Hoa Lu – Tam Coc)",
           "activities": [
             "Breakfast at hotel",
-            "Visit Ho Chi Minh Mausoleum Complex",
-            "Explore One Pillar Pagoda",
-            "Visit Temple of Literature (Vietnam's first university)",
-            "Traditional Vietnamese lunch",
-            "Afternoon visit to Vietnam Museum of Ethnology",
-            "Explore local markets",
+            "Transfer to Ninh Binh (2 hrs)",
+            "Visit ancient capital Hoa Lu",
+            "Sampan boat trip along Tam Coc rice valleys",
+            "Short bike ride to local village",
+            "Return to Hanoi",
             "Evening free to enjoy Hanoi's street food"
           ]
         },
         {
           "day": 3,
-          "title": "Halong Bay Cruise",
+          "title": "Hanoi – Ha Long Bay Overnight Cruise",
           "activities": [
             "Early breakfast and check-out",
             "Transfer to Halong Bay (3.5 hours)",
-            "Board cruise ship and welcome drink",
-            "Cruise through Halong Bay's limestone karsts",
-            "Seafood lunch on board",
+            "Check in cruise",
             "Visit Sung Sot Cave (Surprise Cave)",
             "Kayaking or swimming opportunity",
             "Sunset viewing on deck",
@@ -262,11 +258,10 @@
         "includes": [
           "2 nights hotel in Hanoi (4-star)",
           "1 night on Halong Bay cruise (deluxe cabin)",
-          "Daily breakfast, meals as per itinerary",
+          "Daily breakfast",
           "All transfers by private air-conditioned vehicle",
           "English-speaking tour guide",
           "All entrance fees",
-          "Water Puppet Show tickets",
           "Halong Bay cruise with all activities",
           "Kayaking equipment",
           "Drinking water during tours"
@@ -305,7 +300,7 @@
             "Afternoon city tour: Reunification Palace",
             "Visit Notre-Dame Cathedral and Central Post Office",
             "Explore Ben Thanh Market",
-            "Welcome dinner at a rooftop restaurant"
+            "dinner by your owner"
           ]
         },
         {
@@ -343,7 +338,6 @@
           "activities": [
             "Breakfast at hotel",
             "Free time for last-minute shopping",
-            "Optional: Visit Jade Emperor Pagoda",
             "Hotel check-out",
             "Transfer to Tan Son Nhat Airport",
             "Departure"
@@ -360,8 +354,7 @@
           "All entrance fees as per itinerary",
           "Mekong Delta boat trips",
           "Bicycle rental in Mekong Delta",
-          "Welcome dinner",
-          "Lunches as mentioned"
+          "2 Lunches as mentioned"
         ],
         "excludes": [
           "International flights",
@@ -377,147 +370,192 @@
       "faqIds": ["cu-chi-distance", "cu-chi-tunnels-fit", "mekong-delta-info", "packing-vietnam", "vegetarian"]
     },
     {
-      "id": "vietnam-cross-country-adventure",
+      "id": "Vietnam Grand Tour 15 Days / 14 Nights",
       "image": "/assets/images/vietnam-banner.jpg",
-      "title": "Vietnam Cross-Country Adventure",
-      "daysRange": "10 Days",
-      "tags": ["Hanoi", "Hoi An", "Hue", "Saigon"],
-      "description": "Journey from Hanoi to Ho Chi Minh City, featuring Halong Bay overnight cruise, Hoi An Ancient Town, Hue Imperial City, and multiple UNESCO World Heritage Sites.",
+      "title": "Vietnam Grand Tour 15 Days / 14 Nights",
+      "daysRange": "15 Days",
+      "tags": ["Ho Chi Minh", "Cu Chi Tunel", "Mekong Delta", "Da Nang", "HoiAn", " HUE", "HaNoi", "SAPA", "Halong Bay", "NinhBinh"],
+      "description": "Discover the best of Vietnam in 15 days, from the vibrant streets of Ho Chi Minh City and peaceful Mekong Delta to the cool highlands of Da Lat, cultural treasures of Hue and Hoi An, the bustling capital Hanoi, misty mountains of Sapa with Fansipan cable car, and the stunning Ha Long Bay cruise.\n\nExperience Vietnam’s rich history, breathtaking landscapes, and local culture at a relaxed pace. This tour combines iconic sights, scenic journeys, and unforgettable experiences, making it perfect for first-time visitors seeking a complete and comfortable Vietnam adventure.",
       "location": "Vietnam (North to South)",
-      "duration": "10 Days / 9 Nights",
+      "duration": "15 Days / 14 Nights",
       "featured": true,
-      "overview": "Embark on the ultimate Vietnamese adventure with our comprehensive 10-Day Cross-Country tour. Travel from the ancient capital of Hanoi to the vibrant metropolis of Ho Chi Minh City, experiencing the incredible diversity of Vietnam along the way. Visit four UNESCO World Heritage Sites, cruise through magnificent Halong Bay, explore the charming ancient town of Hoi An, and discover the imperial grandeur of Hue. This tour showcases the very best of Vietnam's culture, history, cuisine, and natural beauty.",
+      "overview": "Embark on an unforgettable 15-day journey through Vietnam, a country rich in culture, breathtaking landscapes, and timeless charm. This grand tour is carefully designed for European travelers seeking a comfortable, diverse, and immersive experience from South to North.\nFrom the vibrant streets of Ho Chi Minh City and the tranquil Mekong Delta to the romantic highlands of Da Lat, the cultural treasures of Hue and Hoi An, the bustling energy of Hanoi, the majestic summit of Fansipan in Sapa, and the world-famous Ha Long Bay cruise—this itinerary brings together the finest highlights Vietnam has to offer.\n\nWith a perfect balance of guided sightseeing and leisure time, combined with unique experiences such as Ba Na Hills’ Golden Bridge, the Fansipan cable car, and a serene Sampan boat ride in Ninh Binh, this program ensures travelers enjoy Vietnam at a relaxed and comfortable pace.\nThis is not just a holiday—it's a complete Vietnam discovery, full of history, nature, flavors, and unforgettable memories.",
       "itinerary": [
         {
           "day": 1,
-          "title": "Hanoi Arrival",
+          "title": "Ho Chi Minh City – Arrival",
           "activities": [
-            "Airport pickup at Noi Bai International Airport",
-            "Transfer to hotel in Hanoi Old Quarter",
+            "Airport pickup at Tan Son Nhat International Airport",
+            "Transfer to hotel & check in hotel",
             "Rest and freshen up",
-            "Evening walking tour of Hanoi Old Quarter",
-            "Welcome dinner with traditional Vietnamese cuisine"
+            "Free evening to explore the city."
           ]
         },
         {
           "day": 2,
-          "title": "Hanoi City Tour",
+          "title": "Ho Chi Minh City – Cu Chi Tunnels",
           "activities": [
             "Breakfast at hotel",
-            "Visit Ho Chi Minh Mausoleum and Presidential Palace",
-            "Explore One Pillar Pagoda",
-            "Visit Temple of Literature",
-            "Traditional lunch",
-            "Afternoon at Vietnam Museum of Ethnology",
-            "Evening Water Puppet Show",
-            "Dinner in Old Quarter"
+            "Drive to Cu Chi to explore the historic tunnel network",
+            "Learn about Vietnam War history and guerrilla tactics",
+            "Return to Ho Chi Minh City for a brief sightseeing tour: Opera House, Central Post Office, Notre Dame Cathedral.",
+            "Overnight in Ho Chi Minh City."
           ]
         },
         {
           "day": 3,
-          "title": "Halong Bay Cruise",
+          "title": "Mekong Delta – Ben Tre – Ho Chi Minh City",
           "activities": [
-            "Breakfast and hotel check-out",
-            "Transfer to Halong Bay",
-            "Board deluxe cruise ship",
-            "Cruise through limestone karsts",
-            "Visit Sung Sot Cave",
-            "Kayaking and swimming",
-            "Cooking class on board",
-            "Dinner and overnight on cruise"
+            "Breakfast at the hotel",
+            "Drive to Ben Tre.",
+            "Boat trip on Mekong River",
+            "Visit coconut workshop, local handicraft villages",
+            "Ride a tuk-tuk or bicycle through local countryside",
+            "Return to Ho Chi Minh City."
           ]
         },
         {
           "day": 4,
-          "title": "Halong Bay to Hanoi, Fly to Danang",
+          "title": "Ho Chi Minh City → Da Lat (by road)",
           "activities": [
-            "Sunrise Tai Chi on deck",
-            "Brunch on board",
-            "Disembark and transfer to Hanoi",
-            "Afternoon flight to Danang",
-            "Transfer to Hoi An",
-            "Hotel check-in",
-            "Evening free to explore Hoi An Ancient Town"
+            "Breakfast and hotel check-out",
+            "Scenic drive to Da Lat (approx. 6 hours).",
+            "Check-in hotel.",
+            "Visit Xuan Huong Lake and Da Lat Market.",
+            "Overnight in Da Lat."
           ]
         },
         {
           "day": 5,
-          "title": "Hoi An Ancient Town",
+          "title": "Da Lat City Tour",
           "activities": [
             "Breakfast at hotel",
-            "Walking tour of Hoi An Ancient Town (UNESCO)",
-            "Visit Japanese Covered Bridge",
-            "Explore Chinese Assembly Halls",
-            "Traditional lunch",
-            "Afternoon: Cooking class or lantern making workshop",
-            "Free time for shopping and tailoring",
-            "Evening: Lantern-lit streets and Thu Bon River"
+            "Visit Truc Lam Zen Monastery & Tuyen Lam Lake.",
+            "Explore Datanla Waterfall",
+            "Stop at a coffee plantation",
+            "Visit the Valley Of Love",
+            "Evening: Overnight in Da Lat."
           ]
         },
         {
           "day": 6,
-          "title": "My Son Sanctuary & Beach",
+          "title": "Da Lat → Da Nang (Flight) – Hoi An – Da Nang",
           "activities": [
-            "Early breakfast",
-            "Visit My Son Sanctuary (UNESCO)",
-            "Explore ancient Cham temples",
-            "Return to Hoi An for lunch",
-            "Afternoon free at An Bang Beach",
-            "Optional: Spa treatment",
-            "Farewell dinner in Hoi An"
+            "Early breakfast & check out hotel",
+            "Go to airport Lien Khuong fly to Da Nang",
+            "Transfer to Hoi An.",
+            "Walking tour of Ancient Town: Japanese Bridge, Old Houses, Lantern Streets.",
+            "Return to Da Nang",
+            "Check in hotel",
+            "Evening free time"
           ]
         },
         {
           "day": 7,
-          "title": "Hoi An to Hue via Hai Van Pass",
+          "title": "Ba Na Hills – Golden Bridge – Da Nang",
           "activities": [
-            "Breakfast and check-out",
-            "Scenic drive over Hai Van Pass",
-            "Photo stops at panoramic viewpoints",
-            "Visit Lang Co Beach",
-            "Arrive in Hue and lunch",
-            "Afternoon: Visit Imperial Citadel (UNESCO)",
-            "Explore Forbidden Purple City",
-            "Hotel check-in"
+            "Breakfast at the hotel",
+            "Enjoy cable car to the summit.",
+            "Visit Golden Bridge, French Village, Flower Garden.",
+            "Return to Da Nang.",
+            "Overnight in Da Nang."
           ]
         },
         {
           "day": 8,
-          "title": "Hue Exploration",
+          "title": "Day Trip to Hue Imperial City",
           "activities": [
             "Breakfast at hotel",
+            "Drive via Hai Van Pass.",
+            "Visit Imperial Citadel.",
             "Visit Thien Mu Pagoda",
-            "Perfume River cruise",
-            "Visit Royal Tombs (Tu Duc, Khai Dinh)",
-            "Traditional Hue lunch",
-            "Explore Dong Ba Market",
-            "Evening free"
+            "Return to Da Nang in the late afternoon.",
+            "Overnight in Da Nang."
           ]
         },
         {
           "day": 9,
-          "title": "Hue to Ho Chi Minh City",
+          "title": "Da Nang → Hanoi (Flight) – City Tour",
           "activities": [
             "Breakfast and check-out",
-            "Transfer to Hue Airport",
-            "Flight to Ho Chi Minh City",
+            "Transfer to airport DA NANG International Airport ",
+            "Flight to Ha Noi ",
             "Hotel check-in",
-            "Afternoon city tour: Reunification Palace",
-            "Visit War Remnants Museum",
-            "Explore Ben Thanh Market",
-            "Farewell dinner at rooftop restaurant"
+            "Afternoon walking tour: Hoan Kiem Lake, Ngoc Son Temple, Old Quarter",
+            "Free evening.",
+            "Overnight in Hanoi."
+          ]
+        },
+  	{
+          "day": 10,
+          "title": "Da Nang → Hanoi (Flight) – City Tour",
+          "activities": [
+            "Breakfast and check-out",
+            "Drive to Sapa via expressway (5–6 hours). ",
+            "Check in hotel. ",
+            "Visit Sapa Town: Stone Church, local market.",
+            "Free time to relax.",
+            "Overnight in Sapa"
+          ]
+        },
+   	{
+          "day": 11,
+          "title": "Fansipan Cable Car – Sapa Leisure",
+          "activities": [
+            "Breakfast at the hotel",
+            "Transfer to Fansipan Cable Car Station.",
+            "Ride the cable car to Fansipan Peak (3,143m).",
+            "Visit pagodas, mountain viewpoints.",
+            "Return to Sapa town.",
+            "Visit Cat Cat Village.",
+            "Overnight in Sapa."
+          ]
+        },
+   	{
+          "day": 12,
+          "title": "Sapa → Hanoi",
+          "activities": [
+            "Breakfast and check-out",
+            "Drive back to Hanoi ",
+            "Visit The Temple of Literature ",
+            "Hotel check-in",
+            "Free evening.",
+            "Overnight in Hanoi."
+          ]
+        },
+   	{
+          "day": 13,
+          "title": "Hanoi → Ha Long Bay – Overnight Cruise",
+          "activities": [
+            "Breakfast and check-out",
+            "Transfer to Ha Long Bay.",
+            "Check in cruise & lunch onboard.",
+            "Activities: kayaking, cave visit, swimming (weather permitting).",
+            "Sunset party & cooking class.",
+            "Overnight in private cabin on cruise."
+          ]
+        },
+   	{
+          "day": 14,
+          "title": "Ha Long → Ninh Binh – Tam Coc – Hanoi",
+          "activities": [
+            "Morning cruise through limestone formations.",
+            "Drive to Ninh Binh.",
+            "Sampan boat trip in Tam Coc.",
+            "Visit Hoa Lu Ancient Capital.",
+            "Drive back to Hanoi",
+            "Check in hotel & free evening.",
+            "Overnight in Hanoi."
           ]
         },
         {
-          "day": 10,
-          "title": "Ho Chi Minh City Departure",
+          "day": 15,
+          "title": "Hanoi – Departure",
           "activities": [
             "Breakfast at hotel",
-            "Free time for shopping",
-            "Optional: Cu Chi Tunnels half-day tour",
-            "Hotel check-out",
-            "Transfer to Tan Son Nhat Airport",
-            "Departure with unforgettable memories"
+            "Free time until airport transfer.",
+            "Depart for home.",
+            "End of tour."
           ]
         }
       ],
